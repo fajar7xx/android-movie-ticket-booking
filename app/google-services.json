@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "619500564475",
+    "project_id": "bwamov-42652",
+    "storage_bucket": "bwamov-42652.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:619500564475:android:1a5673de5a7c27d7e3e55e",
+        "android_client_info": {
+          "package_name": "com.example.bwamov"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "619500564475-2a6rgep7f9nt7t6prce7ejh1svotn8a2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACuLLrc_XFtc24OsQjy7KVjvcG8sRgsRs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "619500564475-2a6rgep7f9nt7t6prce7ejh1svotn8a2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">BWAMOV</string>
+    <string name="button">Button</string>
+    <string name="lewati_perkenalan">Lewati Perkenalan</string>
+    <string name="lanjutkan">Lanjutkan</string>
+    <string name="now_playing">Now Playing</string>
+    <string name="now_playing_desc">Lebih mudah untuk mengetahui \n film yang sedang tampil</string>
+    <string name="pre_sale">Pre Sale</string>
+    <string name="pre_sale_desc">Tidak khawatir ketinggalan \n update film terbaru</string>
+    <string name="cashless">Cashless</string>
+    <string name="cashless_desc">Gunakan e-wallet untuk \n transaksi tiket nonton</string>
+    <string name="memulai">Memulai</string>
+    <string name="sign_in">Sign In</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="masuk_akun">Masuk Akun</string>
+    <string name="daftar">Daftar Akun Baru</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="nama">Nama</string>
+    <string name="email">Email Address</string>
+    <string name="upload_nanti">Upload Nanti</string>
+    <string name="photo">Photo</string>
+    <string name="selamat_datang">Selamat datang,\\n Angga Risky</string>
+    <string name="selamat_datang_2">Selamat Datang,r\nAngga Risky</string>
+    <string name="selamat_datang_3">Selamat Datang,</string>
+    <string name="nama_user">Angga Risky</string>
+    <string name="simpan_lanjut">Simpan dan Lanjutkan</string>
+    <string name="coming_soon">Coming Soon</string>
+    <string name="pilih_bangku">Pilih Bangku</string>
+    <string name="beli_tiket">Beli Tiket</string>
+    <string name="checkout">Checkout</string>
+    <string name="bayar_sekarang">Bayar Sekarang</string>
+    <string name="batalkan">Batalkan</string>
+    <string name="when">When</string>
+    <string name="date_time"><![CDATA[Date & Time]]></string>
+    <string name="cinema">Cinema</string>
+    <string name="items">Items</string>
+    <string name="total_yg_harus_dibayar">Total Yang Harus Dibayar</string>
+    <string name="e_waller">E-Wallet</string>
+    <string name="total_balance">Total Balance</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="simpan_data_baru">Simpan Data Baru</string>
+    <string name="my_wallet">My Wallet</string>
+    <string name="saldo">Saldo Tersedia</string>
+    <string name="daftar_transaksi">Daftar Transaksi</string>
+    <string name="my_history">My History</string>
+    <string name="selamat_datang_nangga_risky">Selamat Datang, \nAngga Risky</string>
+
+
+</resources>
