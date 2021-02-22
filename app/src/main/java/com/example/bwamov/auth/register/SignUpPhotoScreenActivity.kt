@@ -14,7 +14,7 @@ import android.view.View
 import android.widget.Toast
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
-import com.example.bwamov.HomeActivity
+import com.example.bwamov.home.HomeActivity
 import com.example.bwamov.R
 import com.example.bwamov.utils.Preferences
 import com.google.firebase.storage.FirebaseStorage

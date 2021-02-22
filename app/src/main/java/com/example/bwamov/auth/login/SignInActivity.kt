@@ -4,7 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.example.bwamov.HomeActivity
+import com.example.bwamov.home.HomeActivity
 import com.example.bwamov.R
 import com.example.bwamov.auth.register.SignUpActivity
 import com.example.bwamov.utils.Preferences

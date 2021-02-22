@@ -3,7 +3,6 @@ package com.example.bwamov.onboarding
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.bwamov.HomeActivity
 import com.example.bwamov.R
 import com.example.bwamov.auth.login.SignInActivity
 import com.example.bwamov.utils.Preferences

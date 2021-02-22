@@ -45,6 +45,8 @@
     <string name="daftar_transaksi">Daftar Transaksi</string>
     <string name="my_history">My History</string>
     <string name="selamat_datang_nangga_risky">Selamat Datang, \nAngga Risky</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>
