@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.ImageView
 import androidx.fragment.app.Fragment
 import com.example.bwamov.R
+import com.example.bwamov.home.dashboard.DashboardFragment
 import kotlinx.android.synthetic.main.activity_home.*
 
 class HomeActivity : AppCompatActivity() {
@@ -20,6 +21,7 @@ class HomeActivity : AppCompatActivity() {
 
 //        panggil fragmentnya
         setFragment(fragmentHome)
+        changeIcon(iv_menu1, R.drawable.ic_home_active)
 
 //        menu home
         iv_menu1.setOnClickListener {

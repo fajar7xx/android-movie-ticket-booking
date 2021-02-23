@@ -2,20 +2,22 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.bwamov">
 
-<!--    tambahkan permission agar perangkat dapat menggunakan internet-->
-    <uses-permission android:name="android.permission.INTERNET" />
-<!--    agar sdk nya juga bisa pakai internet-->
-    <uses-permission-sdk-23 android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
 
-<!--    permission agar perangkat bisa menggunakan WIFI dan juga untuk sdk 23-->
+    <uses-feature android:name="android.hardware.type.watch" /> <!-- tambahkan permission agar perangkat dapat menggunakan internet -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- agar sdk nya juga bisa pakai internet -->
+    <uses-permission-sdk-23 android:name="android.permission.INTERNET" /> <!-- permission agar perangkat bisa menggunakan WIFI dan juga untuk sdk 23 -->
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
     <uses-permission-sdk-23 android:name="android.permission.ACCESS_WIFI_STATE" />
 
     <uses-permission android:name="android.permission.CAMERA" />
+
     <uses-permission-sdk-23 android:name="android.permission.CAMERA" />
 
-    <uses-feature android:name="android.hardware.camera"
-        android:required="true"/>
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
 
     <application
         android:allowBackup="true"
@@ -24,7 +26,28 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BWAMOV.noActionBar">
-        <activity android:name=".MovieDetailActivity"></activity>
+        <uses-library
+            android:name="com.google.android.wearable"
+            android:required="true" />
+
+        <!--
+               Set to true if your app is Standalone, that is, it does not require the handheld
+               app to run.
+        -->
+        <meta-data
+            android:name="com.google.android.wearable.standalone"
+            android:value="true" />
+
+        <activity
+            android:name=".DetailActivity"
+            android:label="@string/title_activity_detail">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MovieDetailActivity" />
         <activity android:name=".home.HomeActivity" />
         <activity android:name=".onboarding.OnboardingOneActivity" />
         <activity android:name=".onboarding.OnboardingTwoActivity" />
@@ -35,16 +58,10 @@
         <activity android:name=".SplashScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-<!--        <activity android:name=".MainActivity">-->
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN" />-->
-
-<!--                <category android:name="android.intent.category.LAUNCHER" />-->
-<!--            </intent-filter>-->
-<!--        </activity>-->
     </application>
 
 </manifest>

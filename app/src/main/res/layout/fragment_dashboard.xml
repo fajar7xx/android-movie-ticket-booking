@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/shape_background_blue"
-        tools:context=".home.DashboardFragment">
+        tools:context=".home.dashboard.DashboardFragment">
 
         <TextView
             android:id="@+id/tv_nama"
@@ -18,12 +18,12 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="24dp"
-            tools:text="Angga Risky"
             android:textColor="@color/white"
             android:textSize="24sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Angga Risky" />
 
         <TextView
             android:id="@+id/tv_saldo"
@@ -32,10 +32,10 @@
             android:layout_marginStart="16dp"
             android:drawableStart="@drawable/ic_account_balance_wallet"
             android:drawablePadding="20dp"
-            tools:text="IDR 150.000"
             android:textColor="@color/white"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_nama" />
+            app:layout_constraintTop_toBottomOf="@+id/tv_nama"
+            tools:text="IDR 150.000" />
 
         <ImageView
             android:id="@+id/iv_profile"
@@ -82,7 +82,7 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_coming_soon"
             android:layout_width="match_parent"
-            android:layout_height="200dp"
+            android:layout_height="300dp"
             android:layout_marginTop="16dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"

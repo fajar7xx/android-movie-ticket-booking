@@ -8,7 +8,7 @@
     tools:context=".MovieDetailActivity">
 
     <ImageView
-        android:id="@+id/imageView6"
+        android:id="@+id/iv_poster"
         android:layout_width="wrap_content"
         android:layout_height="250dp"
         android:scaleType="centerCrop"
@@ -18,7 +18,7 @@
         app:srcCompat="@drawable/poster" />
 
     <TextView
-        android:id="@+id/textView13"
+        android:id="@+id/tv_kursi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -27,10 +27,24 @@
         android:textColor="@color/white"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+        app:layout_constraintTop_toBottomOf="@+id/iv_poster" />
 
     <TextView
-        android:id="@+id/textView14"
+        android:id="@+id/tv_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_poster"
+        tools:text="8"
+        android:drawableLeft="@drawable/ic_star_yellow"
+        android:drawablePadding="10dp"
+        android:textColor="@color/white"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/tv_genre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -38,7 +52,7 @@
         android:textColor="@color/white"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_kursi" />
 
     <TextView
         android:id="@+id/textView15"
@@ -50,10 +64,10 @@
         android:textColor="@color/white"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_genre" />
 
     <TextView
-        android:id="@+id/textView16"
+        android:id="@+id/tv_desc"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -75,9 +89,10 @@
         android:textColor="@color/white"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_desc" />
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_who_played"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginStart="16dp"
@@ -87,7 +102,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView17" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/btn_pilih_bangku"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
