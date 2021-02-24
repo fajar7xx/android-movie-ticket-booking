@@ -1,10 +1,12 @@
 package com.example.bwamov
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.bumptech.glide.Glide
+import com.example.bwamov.checkout.PilihBangkuActivity
 import com.example.bwamov.home.dashboard.PlaysAdapter
 import com.example.bwamov.model.Film
 import com.example.bwamov.model.Plays
@@ -45,6 +47,12 @@ class MovieDetailActivity : AppCompatActivity() {
 //        panggil datanya
         rv_who_played.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
         getData()
+
+//        action pilih bangku
+        btn_pilih_bangku.setOnClickListener {
+            var intent = Intent(this, PilihBangkuActivity::class.java).putExtra("data", data)
+            startActivity(intent)
+        }
     }
 
     private fun getData() {
@@ -58,8 +66,9 @@ class MovieDetailActivity : AppCompatActivity() {
                     dataList.add(Film!!)
                 }
 
-                rv_who_played.adapter = PlaysAdapter(dataList)
-//                TODO() https://youtu.be/nyhTmFwd4SMsampai 22:12
+                rv_who_played.adapter = PlaysAdapter(dataList){
+
+                }
             }
 
             override fun onCancelled(error: DatabaseError) {

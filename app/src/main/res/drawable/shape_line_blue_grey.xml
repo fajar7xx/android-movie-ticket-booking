@@ -5,7 +5,7 @@
     <stroke android:color="@color/color_blue_grey"
         android:width="3dp" />
     <!--buat roundednya-->
-    <corners android:radius="20dp"/>
+    <corners android:radius="10dp"/>
 
 
 </shape>

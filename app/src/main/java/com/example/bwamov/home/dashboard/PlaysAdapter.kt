@@ -9,6 +9,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.bumptech.glide.request.RequestOptions
 import com.example.bwamov.R
 import com.example.bwamov.model.Plays
 
@@ -53,6 +54,7 @@ class PlaysAdapter(private var data : List<Plays>,
 
             Glide.with(context)
                     .load(data.url)
+                    .apply(RequestOptions.circleCropTransform())
                     .into(tvImage)
 
             itemView.setOnClickListener {

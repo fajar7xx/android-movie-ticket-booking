@@ -12,7 +12,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="16dp"
         android:gravity="center"
         android:text="@string/pilih_bangku"
@@ -22,20 +22,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="24dp"
-        android:background="@drawable/shape_rectangle_pink"
-        android:text="@string/beli_tiket"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -48,10 +34,11 @@
         app:srcCompat="@drawable/ic_baseline_arrow_back_white_24" />
 
     <TextView
-        android:id="@+id/textView18"
+        android:id="@+id/tv_judul"
         android:layout_width="141dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
+        android:gravity="center"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -63,12 +50,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:text="Layar Bioskop"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="249dp" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -105,6 +93,7 @@
             android:textColor="@color/white" />
 
         <ImageView
+            android:id="@+id/a3"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_marginHorizontal="10dp"
@@ -112,6 +101,7 @@
             android:src="@drawable/shape_line_blue_grey" />
 
         <ImageView
+            android:id="@+id/a4"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_marginHorizontal="10dp"
@@ -276,7 +266,7 @@
         android:drawablePadding="10dp"
         android:text="Booked"
         android:textColor="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintBottom_toTopOf="@+id/btn_beli_tiket"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -289,7 +279,7 @@
         android:drawablePadding="10dp"
         android:text="Empty"
         android:textColor="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintBottom_toTopOf="@+id/btn_beli_tiket"
         app:layout_constraintStart_toEndOf="@+id/textView20" />
 
     <TextView
@@ -302,7 +292,33 @@
         android:drawablePadding="10dp"
         android:text="Selected"
         android:textColor="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintBottom_toTopOf="@+id/btn_beli_tiket"
         app:layout_constraintStart_toEndOf="@+id/textView21" />
+
+    <Button
+        android:id="@+id/btn_beli_tiket"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/shape_rectangle_pink"
+        android:text="@string/beli_tiket"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_judul"
+        app:srcCompat="@drawable/ic_path" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
